@@ -1,6 +1,6 @@
 compile server 
 ```
-npx tsc
+npx tsc -p tsconfig.json
 ```
 
 compile client
@@ -9,12 +9,14 @@ tsc -p tsconfig.browser.json
 ```
 
 # TODO: 
+* compile server 
+* compile client
 * complete typescript, remove all any and other hacks
 * complete migration from sockets to webrtc
 
 run server
 ```
-node dist/src/server/index.js
+node dist.server/server/index.js
 ```
 
 run client
