@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "baseUrl": ".",
+    "baseUrl": "./client",
     "outDir": "./dist.browser",
     "target": "es5",
     "module": "es2015",
@@ -8,6 +8,11 @@
     "lib": ["es2016", "dom", "es5"]
   },
   "include": [
-    "./src/**/*"
-  ]
+    "client/**/*",
+    "client/*",
+    "client/base.css",
+    "client/index.html",
+    "client/resources/*"
+  ],
+  "exclude": ["node_modules", "server", "dist.server", "dist.browser"]
 }
