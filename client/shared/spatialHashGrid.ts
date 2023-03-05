@@ -1,5 +1,5 @@
-import { WorldEntityInteface } from "../../server/worldEntity"
 import { sat } from "./math"
+import {WorldEntityInterface} from "../../shared/worldEntityInterface";
 
 export interface SpatialHashGridClient {
     position: number[],
@@ -10,7 +10,7 @@ export interface SpatialHashGridClient {
         nodes: any[] | null
     },
     _queryId: number
-    entity?: WorldEntityInteface
+    entity?: WorldEntityInterface
 }
 
 export interface NodeInterface {

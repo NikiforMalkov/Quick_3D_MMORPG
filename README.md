@@ -1,12 +1,16 @@
-compile the project 
+compile server 
 ```
 npx tsc
 ```
 
+compile client
+```
+tsc -p tsconfig.browser.json
+```
+
 # TODO: 
-* исправить основные баги графики в вебке
-* Перенос на UPD через webrtc https://github.com/geckosio/geckos.io#usage problem is here UPD sockets https://github.com/simondevyoutube/Quick_3D_MMORPG/issues/5
-* Перенести на typescript npm install '@geckos.io/client' '@geckos.io/server'
+* complete typescript, remove all any and other hacks
+* complete migration from sockets to webrtc
 
 run server
 ```
