@@ -1,4 +1,9 @@
-compile server 
+install dependencies
+```
+npm ci
+```
+
+compile server
 ```
 npx tsc -p tsconfig.json
 ```
