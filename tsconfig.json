@@ -10,8 +10,9 @@
     /* Type Checking */
     "strict": true,                                      /* Enable all strict type-checking options. */
     "skipLibCheck": true,                                 /* Skip type checking all .d.ts files. */
-    "outDir": "./dist/src",
-    "baseUrl": "./",
+    "outDir": "./dist.server",
+    "baseUrl": "./server",
     "allowJs": true,
-  }
+  },
+  "exclude": ["node_modules", "dist.server", "dist.browser", "client"]
 }
