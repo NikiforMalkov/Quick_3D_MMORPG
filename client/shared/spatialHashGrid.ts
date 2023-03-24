@@ -1,5 +1,5 @@
-import { sat } from "./math"
-import {WorldEntityInterface} from "../../shared/worldEntityInterface";
+import { sat } from "./math.js"
+import {WorldEntityInterface} from "../../shared/worldEntityInterface.js";
 
 export interface SpatialHashGridClient {
     position: number[],
