@@ -12,6 +12,14 @@ compile client
 ```
 tsc -p tsconfig.browser.json
 ```
+copy resources and other non typescript files and
+```
+npm run copy-files
+```
+clear compiled files
+```
+npm run prebuild
+```
 
 # TODO: 
 * compile server 
