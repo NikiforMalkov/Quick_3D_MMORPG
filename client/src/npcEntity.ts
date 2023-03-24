@@ -1,7 +1,7 @@
 import { AnimationMixer, Group, sRGBEncoding } from "three"
-import { CHARACTER_MODELS } from "../shared/defs"
-import { Component } from "./entity"
-import { BasicCharacterControllerProxy, CharacterFSM } from "./playerEntity"
+import { CHARACTER_MODELS } from "../shared/defs.js"
+import { Component } from "./entity.js"
+import { BasicCharacterControllerProxy, CharacterFSM } from "./playerEntity.js"
 
 export class NPCController extends Component {
 

@@ -1,6 +1,6 @@
 import { BufferAttribute, BufferGeometry, Color, DoubleSide, Float32BufferAttribute, Mesh, NormalBlending, ShaderMaterial, Vector3 } from "three";
-import { lerp } from "../shared/math";
-import { Component } from "./entity"
+import { lerp } from "../shared/math.js";
+import { Component } from "./entity.js"
 
 const _VS = `
 varying vec2 vUV;

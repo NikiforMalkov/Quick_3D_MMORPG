@@ -1,6 +1,6 @@
-import { FBXLoader } from 'three/examples/jsm/loaders/FBXLoader'
-import { Component } from './entity'
-import { CHARACTER_MODELS } from '../shared/defs'
+import { FBXLoader } from 'three/examples/jsm/loaders/FBXLoader.js'
+import { Component } from './entity.js'
+import { CHARACTER_MODELS } from '../shared/defs.js'
 import { Color, MeshStandardMaterial } from 'three';
 
 export class EquipWeapon extends Component {

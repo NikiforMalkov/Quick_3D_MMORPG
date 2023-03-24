@@ -1,4 +1,4 @@
-import { TerrainChunk } from './terrainChunk'
+import { TerrainChunk } from './terrainChunk.js'
 
 export  class TerrainChunkRebuilder {
   _pool: any

@@ -1,10 +1,10 @@
 import * as THREE from 'three';
-import { Component, Entity } from './entity'
-import * as math from '../shared/math'
-import { Noise } from '../shared/noise'
+import { Component, Entity } from './entity.js'
+import * as math from '../shared/math.js'
+import { Noise } from '../shared/noise.js'
 import { Color, Quaternion, Vector3 } from 'three';
-import { RenderComponent } from './renderComponent';
-import { SpatialGridController } from './spatialGridController';
+import { RenderComponent } from './renderComponent.js';
+import { SpatialGridController } from './spatialGridController.js';
 
 const _SCENERY:any = {
   birch1: {

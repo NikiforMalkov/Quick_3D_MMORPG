@@ -1,18 +1,18 @@
-import { SpatialHashGrid } from "../shared/spatialHashGrid";
-import { Entity } from "./entity";
-import { EntityManager } from "./entityManager"
-import { LoadController } from "./loadController";
-import { NetworkController } from "./networkController";
-import { SceneryController } from "./sceneryController";
-import { TerrainChunkManager } from "./terrain";
-import { ThreeJSController } from "./threejsComponent";
-import { UIController } from "./uiСontroller";
+import { SpatialHashGrid } from "../shared/spatialHashGrid.js";
+import { Entity } from "./entity.js";
+import { EntityManager } from "./entityManager.js"
+import { LoadController } from "./loadController.js";
+import { NetworkController } from "./networkController.js";
+import { SceneryController } from "./sceneryController.js";
+import { TerrainChunkManager } from "./terrain.js";
+import { ThreeJSController } from "./threejsComponent.js";
+import { UIController } from "./uiСontroller.js";
 import { GUI } from '../dat.gui.module.js'
 import { PerspectiveCamera, Scene, WebGLRenderer } from "three";
-import { NetworkEntitySpawner, PlayerSpawner } from "./spawners";
-import { InventoryDatabaseController } from "./inventoryController";
-import { LevelUpComponentSpawner } from "./levelUpComponent";
-import { WEAPONS_DATA } from '../shared/defs'
+import { NetworkEntitySpawner, PlayerSpawner } from "./spawners.js";
+import { InventoryDatabaseController } from "./inventoryController.js";
+import { LevelUpComponentSpawner } from "./levelUpComponent.js";
+import { WEAPONS_DATA } from '../shared/defs.js'
 
 class CrappyMMOAttempt {
 

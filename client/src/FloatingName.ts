@@ -1,6 +1,6 @@
 import * as THREE from 'three'
-import { CHARACTER_MODELS } from '../shared/defs'
-import { Component } from './entity'
+import { CHARACTER_MODELS } from '../shared/defs.js'
+import { Component } from './entity.js'
 
 export class FloatingName extends Component {
 

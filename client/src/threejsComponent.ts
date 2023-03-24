@@ -1,6 +1,6 @@
 import * as THREE from 'three';
 import { Color, CubeTextureLoader, DirectionalLight, FogExp2, HemisphereLight, Mesh, PCFSoftShadowMap, PerspectiveCamera, Scene, ShaderMaterial, SphereGeometry, sRGBEncoding, Vector3, WebGLRenderer } from 'three';
-import { Component } from './entity';
+import { Component } from './entity.js';
 
 
 const _VS = `

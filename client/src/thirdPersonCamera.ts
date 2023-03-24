@@ -1,5 +1,5 @@
 import { PerspectiveCamera, Vector3 } from "three"
-import { Component } from "./entity"
+import { Component } from "./entity.js"
 
 export class ThirdPersonCamera extends Component {
 

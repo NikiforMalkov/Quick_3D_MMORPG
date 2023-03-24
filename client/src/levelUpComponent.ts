@@ -1,6 +1,6 @@
 import { Color } from "three"
-import { Component, Entity } from "./entity"
-import { ParticleSystem } from "./particleSystem"
+import { Component, Entity } from "./entity.js"
+import { ParticleSystem } from "./particleSystem.js"
 
 export class LevelUpComponentSpawner extends Component {
 

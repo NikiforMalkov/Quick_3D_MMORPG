@@ -1,7 +1,7 @@
 import { FBXLoader } from 'three/examples/jsm/loaders/FBXLoader'
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader'
 import { AnimationMixer, sRGBEncoding, TextureLoader } from 'three'
-import { Component } from './entity'
+import { Component } from './entity.js'
 
 export class StaticModelComponent extends Component {
   

@@ -1,9 +1,9 @@
-import { IdleState, WalkState, RunState, AttackState, DeathState, DanceState } from './playerState';
+import { IdleState, WalkState, RunState, AttackState, DeathState, DanceState } from './playerState.js';
 import * as THREE from 'three'
-import { FiniteStateMachine } from './finiteStateMachine'
-import { Component } from './entity';
+import { FiniteStateMachine } from './finiteStateMachine.js'
+import { Component } from './entity.js';
 import { AnimationMixer, Vector3 } from 'three';
-import { CHARACTER_MODELS } from '../shared/defs';
+import { CHARACTER_MODELS } from '../shared/defs.js';
 
 export class CharacterFSM extends FiniteStateMachine {
 

@@ -1,4 +1,4 @@
-import { Component } from "./entity"
+import { Component } from "./entity.js"
 
 export class InventoryDatabaseController extends Component {
 

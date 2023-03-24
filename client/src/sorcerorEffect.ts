@@ -1,6 +1,6 @@
 import { Color, Vector3 } from "three"
-import { Component } from "./entity"
-import { ParticleEmitter, ParticleSystem } from "./particleSystem"
+import { Component } from "./entity.js"
+import { ParticleEmitter, ParticleSystem } from "./particleSystem.js"
 
 class SorcerorEffectEmitter extends ParticleEmitter {
 

@@ -1,4 +1,4 @@
-import { State, StateInterface } from "./playerState";
+import { State, StateInterface } from "./playerState.js";
 
 export class FiniteStateMachine {
 
