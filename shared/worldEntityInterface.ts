@@ -1,5 +1,5 @@
 import { quat, vec3 } from "gl-matrix";
-import { SpatialHashGrid, SpatialHashGridClient } from "./spatialHashGrid";
+import { SpatialHashGrid, SpatialHashGridClient } from "./spatialHashGrid.js";
 
 export interface onAction {
     (): void;
