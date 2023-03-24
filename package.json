@@ -5,8 +5,9 @@
   ],
   "scripts": {
     "tsc": "tsc && tsc -p tsconfig.browser.json",
+    "copy-files": "copyfiles -u 1 client/*.html client/*.css client/*.js client/resources/**/* dist.browser/client/",
     "prestart": "copyfiles *.html dist/",
-    "prebuild": "rimraf dist",
+    "prebuild": "rimraf dist.browser dist.server",
     "build": "nest build",
     "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
     "start": "nest start",
@@ -23,6 +24,7 @@
   "devDependencies": {
     "@types/three": "^0.146.0",
     "copyfiles": "^2.4.1",
+    "rimraf": "^4.3.1",
     "typescript": "^4.8.4"
   },
   "dependencies": {
