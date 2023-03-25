@@ -5,9 +5,17 @@ let server = express()
 server.use(
     express.static('dist.browser/client', {
     setHeaders: function (res, path, stat) {
-      res.set('Cross-Origin-Embedder-Policy', 'require-corp')
+      //res.set('Cross-Origin-Embedder-Policy', 'require-corp')
       res.set('Cross-Origin-Opener-Policy', 'same-origin')
     }
+    }),
+)
+server.use('/shared',
+    express.static('dist.browser/shared', {
+        setHeaders: function (res, path, stat) {
+            //res.set('Cross-Origin-Embedder-Policy', 'require-corp')
+            res.set('Cross-Origin-Opener-Policy', 'same-origin')
+        }
     }),
 )
 server.use('/three', express.static('node_modules/three', {
