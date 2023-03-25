@@ -3,7 +3,7 @@ import * as THREE from 'three'
 import { FiniteStateMachine } from './finiteStateMachine.js'
 import { Component } from './entity.js';
 import { AnimationMixer, Vector3 } from 'three';
-import { CHARACTER_MODELS } from '../shared/defs.js';
+import { CHARACTER_MODELS } from '../../shared/defs.js';
 
 export class CharacterFSM extends FiniteStateMachine {
 

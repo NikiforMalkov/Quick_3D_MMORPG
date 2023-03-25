@@ -90,7 +90,7 @@ export class _TerrainChunkRebuilder_Threaded {
     this._pool = {}
     this._old = []
 
-    this._workerPool = new WorkerThreadPool(_NUM_WORKERS, 'src/terrain-builder-threaded-worker.js')
+    this._workerPool = new WorkerThreadPool(_NUM_WORKERS, 'src/terrainBuilderThreadedWorker.js')
 
     this._params = params
   }

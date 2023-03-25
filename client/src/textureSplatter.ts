@@ -1,7 +1,7 @@
 import { Color } from "three"
-import { sat } from "../shared/math.js"
-import { LinearSpline } from "../shared/spline.js"
-import { terrain_constants } from "../shared/terrainConstants.js"
+import { sat } from "../../shared/math.js"
+import { LinearSpline } from "../../shared/spline.js"
+import { terrain_constants } from "../../shared/terrainConstants.js"
 
 const _HEIGHT_NORMALIZATION = terrain_constants.NOISE_HEIGHT / 10.0
 

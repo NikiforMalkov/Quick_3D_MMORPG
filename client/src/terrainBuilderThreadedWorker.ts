@@ -1,8 +1,8 @@
 import { Vector3 } from 'three'
-import { sat } from '../shared/math.js'
-import { Noise } from '../shared/noise.js'
+import { sat } from '../../shared/math.js'
+import { Noise } from '../../shared/noise.js'
 import { TextureSplatter } from './textureSplatter.js'
-import { HeightGenerator } from '../shared/terrainHeight.js'
+import { HeightGenerator } from '../../shared/terrainHeight.js'
 
 class _TerrainBuilderThreadedWorker {
   

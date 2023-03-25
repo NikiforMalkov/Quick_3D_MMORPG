@@ -1,4 +1,4 @@
-import { SpatialHashGrid } from "../shared/spatialHashGrid.js";
+import { SpatialHashGrid } from "../../shared/spatialHashGrid.js";
 import { Entity } from "./entity.js";
 import { EntityManager } from "./entityManager.js"
 import { LoadController } from "./loadController.js";
@@ -12,7 +12,7 @@ import { PerspectiveCamera, Scene, WebGLRenderer } from "three";
 import { NetworkEntitySpawner, PlayerSpawner } from "./spawners.js";
 import { InventoryDatabaseController } from "./inventoryController.js";
 import { LevelUpComponentSpawner } from "./levelUpComponent.js";
-import { WEAPONS_DATA } from '../shared/defs.js'
+import { WEAPONS_DATA } from '../../shared/defs.js'
 
 class CrappyMMOAttempt {
 

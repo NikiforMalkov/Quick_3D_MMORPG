@@ -1,7 +1,7 @@
 import * as THREE from 'three';
 import { Component, Entity } from './entity.js'
-import * as math from '../shared/math.js'
-import { Noise } from '../shared/noise.js'
+import * as math from '../../shared/math.js'
+import { Noise } from '../../shared/noise.js'
 import { Color, Quaternion, Vector3 } from 'three';
 import { RenderComponent } from './renderComponent.js';
 import { SpatialGridController } from './spatialGridController.js';
@@ -111,6 +111,7 @@ export class SceneryController extends Component {
       height: 1.0
     }
     this.noise_ = new Noise(noiseParams)
+    console.log(this.noise_, noiseParams);
 
     this.center_ = null
     this.crap_ = []
