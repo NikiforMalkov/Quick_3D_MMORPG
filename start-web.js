@@ -3,12 +3,15 @@ var express = require("express")
 let server = express()
 
 server.use(
-    express.static('dist.browser/client', {
-    setHeaders: function (res, path, stat) {
-      //res.set('Cross-Origin-Embedder-Policy', 'require-corp')
-      res.set('Cross-Origin-Opener-Policy', 'same-origin')
-    }
-    }),
+    express.static(
+        'dist.browser/client',
+        {
+            setHeaders: function (res, path, stat) {
+              //res.set('Cross-Origin-Embedder-Policy', 'require-corp')
+              res.set('Cross-Origin-Opener-Policy', 'same-origin')
+            }
+        }
+    ),
 )
 server.use('/shared',
     express.static('dist.browser/shared', {
@@ -24,7 +27,7 @@ server.use('/three', express.static('node_modules/three', {
         res.set('Cross-Origin-Opener-Policy', 'same-origin')
     }
 }))
-server.use('/socket.io-client', express.static('node_modules/socket.io-client/dist', {
+server.use('/socket.io-client', express.static('node_modules/socket.io-client/dist/socket.io.esm.min.js', {
     setHeaders: function (res, path, stat) {
         res.set('Cross-Origin-Embedder-Policy', 'require-corp')
         res.set('Cross-Origin-Opener-Policy', 'same-origin')
