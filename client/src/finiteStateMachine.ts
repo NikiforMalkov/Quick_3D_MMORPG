@@ -24,6 +24,9 @@ export class FiniteStateMachine {
       prevState.Exit()
     }
 
+    if (name == null) {
+      name = this._states[Object.keys(this._states)[0]]
+    }
     const state = new this._states[name](this)
 
     this._currentState = state
