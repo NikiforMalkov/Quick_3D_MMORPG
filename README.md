@@ -35,9 +35,5 @@ node dist.server/server/index.js
 
 run client
 ```
-cd dist/src/
-```
-
-```
 node start-web.js
 ```
