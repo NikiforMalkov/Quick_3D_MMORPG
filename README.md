@@ -22,6 +22,7 @@ npm run prebuild
 ```
 
 # TODO: 
+* game is starting +
 * compile server 
 * compile client
 * complete typescript, remove all any and other hacks
