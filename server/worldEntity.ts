@@ -100,13 +100,13 @@ export class WorldEntity implements WorldEntityInterface {
     return [this.state_, [...this.position_], [...this.rotation_]];
   }
 
-  UpdateTransform(transformData:transformInterface) {
+  UpdateTransform(transformData:any) {
     if (this.stats_.health <= 0) {
       this.SetState("death");
     }
     this.state_ = transformData.state;
-    this.position_ = vec3.fromValues(transformData.position[0], transformData.position[1], transformData.position[2]);
-    this.rotation_ = quat.fromValues(transformData.rotation[0], transformData.rotation[1], transformData.rotation[2], transformData.rotation[3]);
+    this.position_ = vec3.fromValues(transformData[1][0], transformData[1][1], transformData[1][2]);
+    this.rotation_ = quat.fromValues(transformData[2][0], transformData[2][1], transformData[2][2], transformData[2][3]);
 
     this.UpdateGridClient_();
   }
